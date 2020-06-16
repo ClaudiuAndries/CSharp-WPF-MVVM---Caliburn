@@ -1,0 +1,59 @@
+﻿<Window x:Class="WPFUI.Views.SecondView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFUI.Views"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="SecondView" Height="794.32" Width="745.874">
+        <Grid Margin="0,0,2,1">
+                <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <!-- Randul 0 aici mai trebuie sa fac bind la dificultate-->
+                <TextBlock HorizontalAlignment="Left" Grid.Row="0" Margin="68,53,0,0" TextWrapping="Wrap" Text="{Binding Path=FullName}" VerticalAlignment="Top" Width="105" Height="17"/>
+                <TextBlock HorizontalAlignment="Left" Grid.Row="0" Margin="534,53,0,0" TextWrapping="Wrap" Text="{Binding Path=DifficultTest}" VerticalAlignment="Top" Width="105" Height="17"/>
+                <!-- Randul 1 -->
+                <TextBlock HorizontalAlignment="Left" Grid.Row="1"  TextWrapping="Wrap" Text="{Binding Path=FirstQuestion}" VerticalAlignment="Top" Width="693" Height="18" Margin="18,0,0,0"/>
+                <CheckBox Content="{Binding Path=ContentBoxFirstSet1}" IsChecked="{Binding Path=CheckBoxFirstSet1}" HorizontalAlignment="Left" Margin="18,23,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.423,0.156"/>
+                <CheckBox Content="{Binding Path=ContentBoxFirstSet2}" IsChecked="{Binding Path=CheckBoxFirstSet2}" HorizontalAlignment="Left" Margin="18,43,0,0" Grid.Row="1" VerticalAlignment="Top" />
+                <CheckBox Content="{Binding Path=ContentBoxFirstSet3}" IsChecked="{Binding Path=CheckBoxFirstSet3}" HorizontalAlignment="Left" Margin="18,63,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+                <!-- Randul 2 -->
+                <TextBlock HorizontalAlignment="Left" Margin="18,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Path=SecondQuestion}" VerticalAlignment="Top" Width="693" />
+                <CheckBox Content="{Binding Path=ContentBoxSecondSet1}" IsChecked="{Binding Path=CheckBoxSecondSet1}" HorizontalAlignment="Left" Margin="18,31,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+                <CheckBox Content="{Binding Path=ContentBoxSecondSet2}" IsChecked="{Binding Path=CheckBoxSecondSet2}" HorizontalAlignment="Left" Margin="18,51,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+                <CheckBox Content="{Binding Path=ContentBoxSecondSet3}" IsChecked="{Binding Path=CheckBoxSecondSet3}" HorizontalAlignment="Left" Margin="18,71,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+                <!-- Randul 3 -->
+                <TextBlock HorizontalAlignment="Left" Margin="18,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="{Binding Path=ThirdQuestion}" VerticalAlignment="Top" Width="693"/>
+                <CheckBox Content="{Binding Path=ContentBoxThirdSet1}" IsChecked="{Binding Path=CheckBoxThirdSet1}" HorizontalAlignment="Left" Margin="18,37,0,0" Grid.Row="3" VerticalAlignment="Top"/>
+                <CheckBox Content="{Binding Path=ContentBoxThirdSet2}" IsChecked="{Binding Path=CheckBoxThirdSet2}" HorizontalAlignment="Left" Margin="18,57,0,0" Grid.Row="3" VerticalAlignment="Top"/>
+                <CheckBox Content="{Binding Path=ContentBoxThirdSet3}" IsChecked="{Binding Path=CheckBoxThirdSet3}" HorizontalAlignment="Left" Margin="18,77,0,0" Grid.Row="3" VerticalAlignment="Top"/>
+                <!-- Randul 4-->
+                <TextBlock HorizontalAlignment="Left" Margin="18,10,0,0" Grid.Row="4" TextWrapping="Wrap" Text="{Binding Path=FourthQuestion}" VerticalAlignment="Top" Width="693"/>
+                <CheckBox Content="{Binding Path=ContentBoxFourthSet1}" IsChecked="{Binding Path=CheckBoxFourthSet1}" HorizontalAlignment="Left" Margin="18,31,0,0" Grid.Row="4" VerticalAlignment="Top"/>
+                <CheckBox Content="{Binding Path=ContentBoxFourthSet2}" IsChecked="{Binding Path=CheckBoxFourthSet2}" HorizontalAlignment="Left" Margin="18,51,0,0" Grid.Row="4" VerticalAlignment="Top"/>
+                <CheckBox Content="{Binding Path=ContentBoxFourthSet3}" IsChecked="{Binding Path=CheckBoxFourthSet3}" HorizontalAlignment="Left" Margin="18,71,0,0" Grid.Row="4" VerticalAlignment="Top"/>
+                <!-- Randul 5 -->
+                <TextBlock HorizontalAlignment="Left" Margin="18,10,0,0" Grid.Row="5" TextWrapping="Wrap" Text="{Binding Path=FifthQuestion}" VerticalAlignment="Top" Width="693"/>
+                <CheckBox Content="{Binding Path=ContentBoxFifthSet1}" IsChecked="{Binding Path=CheckBoxFifthSet1}" HorizontalAlignment="Left" Margin="18,31,0,0" Grid.Row="5" VerticalAlignment="Top"/>
+                <CheckBox Content="{Binding Path=ContentBoxFifthSet2}" IsChecked="{Binding Path=CheckBoxFifthSet2}" HorizontalAlignment="Left" Margin="18,51,0,0" Grid.Row="5" VerticalAlignment="Top"/>
+                <CheckBox Content="{Binding Path=ContentBoxFifthSet3}" IsChecked="{Binding Path=CheckBoxFifthSet3}" HorizontalAlignment="Left" Margin="18,71,0,0" Grid.Row="5" VerticalAlignment="Top"/>
+                <!-- Randul 6 -->
+                <Button x:Name="ButtonPress" Content="Finish!" Grid.Row="6" FontSize="30" Margin="20" Width="100"/>
+                
+
+
+
+
+
+
+        </Grid>
+</Window>
